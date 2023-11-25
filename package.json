@@ -1,0 +1,21 @@
+{
+  "name": "8.1-projeto-lp-spiderman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/main.scss:css/main.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaioCosta62/lp-homem-aranha-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaioCosta62/lp-homem-aranha-2/issues"
+  },
+  "homepage": "https://github.com/KaioCosta62/lp-homem-aranha-2#readme"
+}
