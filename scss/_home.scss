@@ -1,0 +1,95 @@
+.s-hero{
+  padding: 11.8rem 0;
+  width: 100%;
+  height: 80rem;
+  background: url('../assets/bg-hero.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  &::after{
+    content: '';
+    width: 100%;
+    height: 30rem;
+    background-image: linear-gradient(transparent, #060608);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .left-container{
+    width: 100%;
+    max-width: 62.2rem;
+    position: relative;
+    z-index: 1;
+    .plataform{
+      margin-bottom: 3rem;
+      @include flexCenter;
+      span{
+        font-size: 1.2rem;
+        line-height: 150%;
+        &.available-for{
+          color: $gray-light-01;
+          background-color: $gray-dark-03;
+          padding: 0.6rem 1.2rem;
+          border-radius: 4px 0 0 4px;
+        }
+        &.console{
+          color: $white;
+          font-weight: 500;
+          padding: 0.6rem 1rem;
+          background-color: $gray-dark-04;
+          border-radius: 0 4px 4px 0;
+        }
+      }
+    }
+    p{
+      color: $white;
+      font-size: 1.8rem;
+      line-height: 150%;
+      margin-bottom: 4.8rem;
+    }
+    .add-cart{
+      margin-bottom: 7.2rem;
+      span{
+        color: $white;
+        font-size: 3.2rem;
+        font-weight: 600;
+        font-family: 'Mohave', sans-serif;
+        margin-bottom: 2.4rem;
+      }
+      div{
+        @include flexCenter;
+        gap: 2.2rem;
+      }
+    }
+  }
+  .right-container{
+    margin-top: 4.35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    span{
+      font-size: 1.2rem;
+      line-height: 150%;
+      &.age{
+        @include flexTotalCenter;
+        width: 3.2rem;
+        height: 3.2rem;
+        background-color: $auxiliary-yellow;
+        border-radius: 6px;
+        color: $white;
+        margin-bottom: 1.6rem;
+      }
+    }
+    div{
+      span{
+        color: $gray-light-03;
+        text-align: right;
+      }
+    }
+  }
+}
