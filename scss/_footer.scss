@@ -1,0 +1,37 @@
+.footer{
+  width: 100%;
+  padding: 7.2rem 0;
+  .container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .left-container{
+    width: 100%;
+    max-width: 66.8rem;
+    span{
+      color: $white;
+      font-family: 'Mohave', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 1.1rem;
+    }
+    p{
+      color: $gray-light-02;
+      font-size: 1.4rem;
+      line-height: 150%;
+    }
+  }
+  .right-container{
+    @include flexCenter;
+
+    gap: 2.4rem;
+    span{
+      color: $white;
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 150%;
+    }
+  }
+}
