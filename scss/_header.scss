@@ -26,4 +26,14 @@
       }
     }
   }
+  @include responsive('tablet'){
+    nav{
+      display: none;
+    }
+  }
+  @include responsive('mobile'){
+    img{
+      max-width: 12rem;
+    }
+  }
 }
