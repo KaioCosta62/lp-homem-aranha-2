@@ -4,6 +4,9 @@
   position: sticky;
   left: 0;
   top: 0;
+  background: rgba(0,4,7,.9);
+  backdrop-filter: blur(4px);
+  z-index: 999;
   .container{
     @include flexCenterJustify;
   }
