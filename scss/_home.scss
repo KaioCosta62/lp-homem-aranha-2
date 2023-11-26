@@ -6,6 +6,7 @@
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  overflow: hidden;
   &::after{
     content: '';
     width: 100%;
@@ -25,6 +26,7 @@
     max-width: 62.2rem;
     position: relative;
     z-index: 1;
+    animation: fadeLeft 1s forwards;
     .plataform{
       margin-bottom: 3rem;
       @include flexCenter;
@@ -72,6 +74,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    animation: fadeRight 1s forwards;
     span{
       font-size: 1.2rem;
       line-height: 150%;
@@ -246,5 +249,27 @@
   }
   to{
     transform: translateY(20px);
+  }
+}
+
+@keyframes fadeLeft{
+  from{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to{
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeRight{
+  from{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
   }
 }
