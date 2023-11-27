@@ -95,6 +95,51 @@
       }
     }
   }
+  @include responsive('tablet'){
+    padding: 7.8rem 0;
+    .left-container{
+      max-width: 100%;
+      p{
+        max-width: 65rem;
+      }
+    }
+    .right-container{
+      display: none;
+    }
+  }
+  @include responsive('tablet-small'){
+    padding: 4rem 0;
+    height: auto;
+    &::after{
+      height: 20rem;
+    }
+    .left-container{
+      .plataform{
+        margin-bottom: 1.6rem;
+      }
+      p{
+        margin-bottom: 2rem;
+      }
+      .add-cart{
+        margin-bottom: 5rem;
+        span{
+          margin-bottom: 1.6rem;
+        }
+      }
+    }
+  }
+  @include responsive('mobile'){
+    background-size: 120rem;
+    background-position-x: 65%;
+    &::after{
+      height: 15rem;
+    }
+    .left-container{
+      p{
+        font-size: 1.6rem;
+      }
+    }
+  }
 }
 
 .s-videos{

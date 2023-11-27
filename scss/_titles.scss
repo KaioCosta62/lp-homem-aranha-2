@@ -14,6 +14,13 @@ h3{
 h1{
   font-size: 5.6rem;
   font-weight: 700;
+  @include responsive('tablet-small'){
+    font-size: 4rem;
+  }
+  @include responsive('mobile'){
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
 }
 
 h2{
