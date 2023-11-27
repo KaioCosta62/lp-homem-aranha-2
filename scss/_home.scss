@@ -200,6 +200,15 @@
       opacity: 0;
     }
   }
+  @include responsive('tablet'){
+    padding: 5rem 0;
+    .btn{
+      display: none;
+    }
+  }
+  @include responsive('tablet-small'){
+    padding: 4rem 0;
+  }
 }
 
 .s-villain{
