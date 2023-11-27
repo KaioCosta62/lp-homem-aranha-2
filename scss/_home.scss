@@ -259,6 +259,32 @@
   img{
     animation: animateScroll .3s ease-in infinite alternate;
   }
+  @include responsive('tablet'){
+    height: 60rem;
+  }
+  @include responsive('tablet-small'){
+   height: 56rem;
+    &::before,
+    &::after{
+      height: 15rem;
+    }
+    p{
+      margin-bottom: 5rem;
+    }
+  }
+  @include responsive('mobile'){
+    &::before,
+    &::after{
+      height: 10rem;
+    }
+    height: auto;
+    padding: 6rem 0;
+    background-size: 90rem;
+    p{
+      max-width: 30rem;
+      font-size: 1.6rem;
+    }
+  }
 }
 
 @keyframes changeBG {
